@@ -1,0 +1,22 @@
+{
+  "champion_metrics": {
+    "accuracy": 0.9822305354220248,
+    "precision": 0.5902777777777778,
+    "recall": 0.8333333333333334,
+    "f1": 0.6910569105691057
+  },
+  "candidate_metrics": {
+    "accuracy": 0.9791910217442132,
+    "precision": 0.5408805031446541,
+    "recall": 0.8431372549019608,
+    "f1": 0.6590038314176245
+  },
+  "rules": {
+    "candidate_f1_gte_champion_f1": false,
+    "candidate_recall_gte_champion_recall": true
+  },
+  "decision": "RETAIN_EXISTING_CHAMPION",
+  "champion_overwritten": false,
+  "mlflow_status": "logged",
+  "metric_justification": "F1 balances precision and recall. Recall is an additional guardrail because missing an upcoming engine failure is costly."
+}
